@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<IconTextureAtlases>
+        <Row Name="ICON_ATLAS_MISSING_UNITS" IconSize="32" IconsPerRow="10" IconsPerColumn="5" Filename="MissingUnitsFlags_32"/>
+        <Row Name="ICON_ATLAS_MISSING_UNITS" IconSize="38" IconsPerRow="10" IconsPerColumn="5" Filename="MissingUnitsFlags_38"/>
+        <Row Name="ICON_ATLAS_MISSING_UNITS" IconSize="50" IconsPerRow="10" IconsPerColumn="5" Filename="MissingUnitsFlags_50"/>
+        <Row Name="ICON_ATLAS_MISSING_UNITS" IconSize="80" IconsPerRow="10" IconsPerColumn="5" Filename="MissingUnitsFlags_80"/>
+        <Row Name="ICON_ATLAS_MISSING_UNITS" IconSize="256" IconsPerRow="10" IconsPerColumn="5" Filename="MissingUnitsFlags_256"/>
+    </IconTextureAtlases>
+    <IconDefinitions>
+		<Replace Name="ICON_UNIT_AT_CREW" Atlas="ICON_ATLAS_MISSING_UNITS" Index="53"/>
+		<Row Name="ICON_UNIT_MOTORISED_INFANTRY" Atlas="ICON_ATLAS_MISSING_UNITS" Index="2"/>
+		<Row Name="ICON_UNIT_COMPOSITE_BOWMAN" Atlas="ICON_ATLAS_MISSING_UNITS" Index="3"/>
+		<Row Name="ICON_UNIT_CULVERIN" Atlas="ICON_ATLAS_MISSING_UNITS" Index="4"/>
+		<Row Name="ICON_UNIT_FIELD_GUN" Atlas="ICON_ATLAS_MISSING_UNITS" Index="5"/>
+		<Row Name="ICON_UNIT_ASSAULT_GUN" Atlas="ICON_ATLAS_MISSING_UNITS" Index="6"/>
+		<Row Name="ICON_UNIT_SP_GUN" Atlas="ICON_ATLAS_MISSING_UNITS" Index="7"/>
+		<Row Name="ICON_UNIT_HEAVY_INFANTRY" Atlas="ICON_ATLAS_MISSING_UNITS" Index="8"/>
+		<Row Name="ICON_UNIT_TANK_DESTROYER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="11"/>
+		<Row Name="ICON_UNIT_LANCER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="13"/>
+		<Row Name="ICON_UNIT_ARMORED_CAVALRY" Atlas="ICON_ATLAS_MISSING_UNITS" Index="44"/>
+		<Row Name="ICON_UNIT_GUNSHIP" Atlas="ICON_ATLAS_MISSING_UNITS" Index="59"/>
+		<Row Name="ICON_UNIT_ARMORED_HORSEMAN" Atlas="ICON_ATLAS_MISSING_UNITS" Index="19"/>
+		<Row Name="ICON_UNIT_REITER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="20"/>
+		<Row Name="ICON_UNIT_LANDSHIP" Atlas="ICON_ATLAS_MISSING_UNITS" Index="45"/>
+		<Row Name="ICON_UNIT_WW1_BOMBER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="39"/>
+		<Row Name="ICON_UNIT_STEALTH_BOMBER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="47"/>
+		<Row Name="ICON_UNIT_STEALTH_FIGHTER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="58"/>
+		<Row Name="ICON_UNIT_WW1_GROUND_ATTACK" Atlas="ICON_ATLAS_MISSING_UNITS" Index="36"/>
+		<Row Name="ICON_UNIT_GROUND_ATTACK" Atlas="ICON_ATLAS_MISSING_UNITS" Index="37"/>
+		<Row Name="ICON_UNIT_JET_GROUND_ATTACK" Atlas="ICON_ATLAS_MISSING_UNITS" Index="38"/>
+		<Row Name="ICON_UNIT_STEALTH_ATTACK" Atlas="ICON_ATLAS_MISSING_UNITS" Index="48"/>
+		<Row Name="ICON_UNIT_CORVETTE" Atlas="ICON_ATLAS_MISSING_UNITS" Index="54"/>
+		<Row Name="ICON_UNIT_MISSILE_DESTROYER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="28"/>
+		<Row Name="ICON_UNIT_SUPERCARRIER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="35"/>
+		<Row Name="ICON_UNIT_GALLEASS" Atlas="ICON_ATLAS_MISSING_UNITS" Index="51"/>
+		<Row Name="ICON_UNIT_ARMORED_CRUISER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="31"/>
+		<Row Name="ICON_UNIT_BATTLECRUISER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="32"/>
+		<Row Name="ICON_UNIT_GALLEON" Atlas="ICON_ATLAS_MISSING_UNITS" Index="27"/>
+		<Row Name="ICON_UNIT_SHIP_OF_THE_LINE" Atlas="ICON_ATLAS_MISSING_UNITS" Index="33"/>
+		<Row Name="ICON_UNIT_PRE_DREADNOUGHT" Atlas="ICON_ATLAS_MISSING_UNITS" Index="34"/>
+		<Row Name="ICON_UNIT_ATTACK_SUBMARINE" Atlas="ICON_ATLAS_MISSING_UNITS" Index="29"/>
+		<Row Name="ICON_UNIT_INDUSTRIAL_MARINE" Atlas="ICON_ATLAS_MISSING_UNITS" Index="57"/>
+		<Row Name="ICON_UNIT_WW2_MARINE" Atlas="ICON_ATLAS_MISSING_UNITS" Index="56"/>
+		<Row Name="ICON_UNIT_MODERN_MARINE" Atlas="ICON_ATLAS_MISSING_UNITS" Index="55"/>
+		<Row Name="ICON_UNIT_FIELD_HOWITZER" Atlas="ICON_ATLAS_MISSING_UNITS" Index="25"/>
+		<Row Name="ICON_UNIT_SP_HVY_ATILLERY" Atlas="ICON_ATLAS_MISSING_UNITS" Index="26"/>
+		<Row Name="ICON_UNIT_UAV" Atlas="ICON_ATLAS_MISSING_UNITS" Index="52"/>
+	</IconDefinitions>
+</GameInfo>

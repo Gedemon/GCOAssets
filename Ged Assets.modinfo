@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="432232e6-7d07-4c16-9262-cc28795d72c5">
+    <Properties>
+        <Name>LOC_GED_ASSETS_TITLE</Name>
+        <Teaser>LOC_GED_ASSETS_TEASER</Teaser>
+        <Description>LOC_GED_ASSETS_DESCRIPTION</Description>
+        <Authors>Multiple</Authors>
+    </Properties>
+	
+	<LocalizedText>
+		<Text id="LOC_GED_ASSETS_TITLE">
+			<en_US>Gedemon's Assets</en_US>
+            <de_DE>Gedemon's Assets</de_DE>
+            <es_ES>Gedemon's Assets</es_ES>
+            <fr_FR>Gedemon's Assets</fr_FR>
+            <it_IT>Gedemon's Assets</it_IT>
+            <ja_JP>Gedemon's Assets</ja_JP>
+            <ko_KR>Gedemon's Assets</ko_KR>
+            <pl_PL>Gedemon's Assets</pl_PL>
+            <pt_BR>Gedemon's Assets</pt_BR>
+            <ru_RU>Gedemon's Assets</ru_RU>
+			<zh_Hans_CN>Gedemon's Assets</zh_Hans_CN>
+			<zh_Hant_HK>Gedemon's Assets</zh_Hant_HK>
+		</Text>
+		<Text id="LOC_GED_ASSETS_TEASER">
+			<en_US>Assets for Gedemon's Civilization</en_US>
+            <de_DE>Assets for Gedemon's Civilization</de_DE>
+            <es_ES>Assets for Gedemon's Civilization</es_ES>
+            <fr_FR>Assets for Gedemon's Civilization</fr_FR>
+            <it_IT>Assets for Gedemon's Civilization</it_IT>
+            <ja_JP>Assets for Gedemon's Civilization</ja_JP>
+            <ko_KR>Assets for Gedemon's Civilization</ko_KR>
+            <pl_PL>Assets for Gedemon's Civilization</pl_PL>
+            <pt_BR>Assets for Gedemon's Civilization</pt_BR>
+            <ru_RU>Assets for Gedemon's Civilization</ru_RU>
+			<zh_Hans_CN>Assets for Gedemon's Civilization</zh_Hans_CN>
+			<zh_Hant_HK>Assets for Gedemon's Civilization</zh_Hant_HK>
+		</Text>
+		<Text id="LOC_GED_ASSETS_DESCRIPTION">
+			<en_US>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</en_US>
+            <de_DE>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</de_DE>
+            <es_ES>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</es_ES>
+            <fr_FR>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</fr_FR>
+            <it_IT>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</it_IT>
+            <ja_JP>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</ja_JP>
+            <ko_KR>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</ko_KR>
+            <pl_PL>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</pl_PL>
+            <pt_BR>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</pt_BR>
+            <ru_RU>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</ru_RU>
+			<zh_Hans_CN>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</zh_Hans_CN>
+			<zh_Hant_HK>Assets used by the Gedemon's Civilization mod.[NEWLINE][NEWLINE][ICON_BULLET]Credits:[NEWLINE][ICON_BULLET]Deliverator[NEWLINE][ICON_BULLET]Wolfdog[NEWLINE][ICON_BULLET]GeloDGreat</zh_Hant_HK>
+		</Text>
+	</LocalizedText>
+	
+	<Dependencies>
+		<Mod id="02A8BDDE-67EA-4D38-9540-26E685E3156E" title="AztecMontezuma" />
+	</Dependencies>
+	
+    <FrontEndActions>
+		<!-- MOAR Units -->
+        <UpdateDatabase id="MOAR_SETTING">
+			<Properties>
+				<LoadOrder>2</LoadOrder>
+			</Properties>
+            <File>Config/MOAR_Units_Config.xml</File>
+        </UpdateDatabase>
+		<UpdateIcons id="MOAR_SETTING_Icons">
+			<Properties>
+				<LoadOrder>2</LoadOrder>
+			</Properties>
+			<File>Data/MOAR_Units_Icons.xml</File>
+		</UpdateIcons>
+		
+		<!-- MOAR Units Aztec -->
+        <UpdateIcons id="MOAR_Aztec_ICON_SETTING">
+            <Properties>
+                <LoadOrder>10</LoadOrder>
+            </Properties>
+            <File>Data/Even_MOAR_Units_Aztec_Icons.xml</File>
+        </UpdateIcons>
+        <UpdateDatabase id="MOAR_Aztec_SETTING">
+            <Properties>
+                <LoadOrder>10</LoadOrder>
+            </Properties>
+            <File>Config/MOAR_Units_Aztec_Config.xml</File>
+        </UpdateDatabase>
+    </FrontEndActions>
+	
+    <InGameActions>
+		<!-- Common -->
+		<UpdateDatabase id="GED_ASSETS_UpdateDatabase">
+			<Properties>
+				<LoadOrder>9</LoadOrder>
+			</Properties>
+			<File>Data/GED_UnlockAllUnits.sql</File>
+		</UpdateDatabase>
+		
+		<!-- MOAR Units -->
+        <UpdateDatabase id="MOAR_UpdateDatabase2">
+			<Properties>
+				<LoadOrder>2</LoadOrder>
+			</Properties>
+            <File>Data/MOAR_Units_Data.xml</File>
+        </UpdateDatabase>
+		<UpdateDatabase id="MOAR_UpdateDatabase3">
+			<Properties>
+				<LoadOrder>3</LoadOrder>
+			</Properties>
+			<File>Data/MOAR_Units_Data.sql</File>
+		</UpdateDatabase>
+        <UpdateIcons id="MOAR_Icons">
+			<Properties>
+				<LoadOrder>-1</LoadOrder>
+			</Properties>
+            <File>Data/MOAR_Units_Icons.xml</File>
+        </UpdateIcons>		
+        <UpdateArt id="MOAR_ModArt">
+            <File>MOAR_Units.dep</File>
+        </UpdateArt>
+		
+		<!-- MOAR Units Aztec -->
+        <UpdateDatabase id="MOAR_Aztec_UpdateDatabase">
+            <Properties>
+                <LoadOrder>10</LoadOrder>
+            </Properties>
+            <File>Data/Even_MOAR_Units_Aztec_Data.xml</File>
+        </UpdateDatabase>
+        <UpdateIcons id="MOAR_Aztec_Icons">
+            <File>Data/Even_MOAR_Units_Aztec_Icons.xml</File>
+        </UpdateIcons>
+        <UpdateArt id="MOAR_Aztec_ModArt">
+            <File>MOAR_Units_Aztec.dep</File>
+        </UpdateArt>
+		
+		<!-- Warfare Expanded -->
+		<UpdateArt id="Art">
+		  <File>Warfare Expanded.dep</File>
+		</UpdateArt>
+		<UpdateDatabase id="Gameplay">
+		  <Properties>
+			<LoadOrder>10000</LoadOrder>
+		  </Properties>
+		  <File>Data/WarfareExpanded_UnitPromotions.xml</File>
+		  <File>Data/WarfareExpanded_UnitAbilities.sql</File>
+		  <File>Data/WarfareExpanded_Units.sql</File>
+		  <File>Data/WarfareExpanded_Units_Changes.sql</File>
+		</UpdateDatabase>
+		<UpdateIcons id="Icons">
+		  <Properties>
+			<LoadOrder>10000</LoadOrder>
+		  </Properties>
+		  <File>Data/WarfareExpanded_Icons_UnitFlags.xml</File>
+		  <File>Data/WarfareExpanded_Icons_UnitPortraits.xml</File>
+		  <File>Data/WarfareExpanded_Icons_Units.xml</File>
+		</UpdateIcons>
+		
+		<!-- GCO Components -->
+		<UpdateArt id="GCO_ConfigArt">
+			<File>GCO.dep</File>
+		</UpdateArt>
+		
+		<!-- RED Components -->
+        <UpdateArt id="GED_ASSETS_ModArt">
+			<Properties>
+				<LoadOrder>99</LoadOrder>
+			</Properties>
+			<File Priority="50">RED_Modpack.dep</File>
+			<File Priority="45">RED_MOAR_Units.dep</File>
+			<File Priority="40">RED_MOAR_Aztec.dep</File>
+			<File Priority="35">RED_WarfareExpanded.dep</File>
+			<File Priority="10">GedAssets.dep</File>
+        </UpdateArt>
+    </InGameActions>
+	
+    <Files>
+		<!-- Common -->
+		<File>Data/GED_UnlockAllUnits.sql</File>
+		<File>GedAssets.dep</File>
+		<!-- GCO Components -->
+		<File>GCO.dep</File>
+		<!-- RED Components -->
+        <File>RED_Modpack.dep</File>
+        <File>RED_MOAR_Units.dep</File>
+        <File>RED_MOAR_Aztec.dep</File>
+        <File>RED_WarfareExpanded.dep</File>
+		<!-- MOAR Units -->
+        <File>MOAR_Units.dep</File>
+		<File>Config/MOAR_Units_Config.xml</File>
+		<File>Data/MOAR_Units_Data.xml</File>
+		<File>Data/MOAR_Units_Data.sql</File>
+        <File>Data/MOAR_Units_Icons.xml</File>
+		<!-- MOAR Units Aztec -->
+        <File>MOAR_Units_Aztec.dep</File>
+        <File>Config/MOAR_Units_Aztec_Config.xml</File>
+        <File>Data/Even_MOAR_Units_Aztec_Data.xml</File>
+        <File>Data/Even_MOAR_Units_Aztec_Icons.xml</File>		
+		<!-- Warfare Expanded -->
+		<File>Data/WarfareExpanded_Icons_UnitFlags.xml</File>
+		<File>Data/WarfareExpanded_Icons_UnitPortraits.xml</File>
+		<File>Data/WarfareExpanded_Icons_Units.xml</File>
+		<File>Data/WarfareExpanded_UnitAbilities.sql</File>
+		<File>Data/WarfareExpanded_UnitPromotions.xml</File>
+		<File>Data/WarfareExpanded_Units.sql</File>
+		<File>Data/WarfareExpanded_Units_Changes.sql</File>
+		<File>Warfare Expanded.dep</File>
+    </Files>
+</Mod>

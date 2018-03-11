@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects::GameDependencyData>
+	<ID>
+		<name text="GCO"/>
+		<id text="cf31281d-783b-47dd-bc58-992ed862bb74"/>
+	</ID>
+	<RequiredGameArtIDs>
+		<Element>
+			<name text="Civ6"/>
+			<id text="cb2f71b7-843e-4af3-9ca7-992acda9c195"/>
+		</Element>
+	</RequiredGameArtIDs>
+
+	<LibraryDependencies>
+		<Element>
+			<LibraryName text="UITexture"/>
+			<PackageDependencies>
+				<Element text="UI/BuildingIcons.blp"/>
+			</PackageDependencies>
+		</Element>
+	</LibraryDependencies>
+</AssetObjects::GameDependencyData>

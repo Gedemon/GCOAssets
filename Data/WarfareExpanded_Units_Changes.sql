@@ -1,0 +1,106 @@
+-- Unit Upgrades Changes
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_INFANTRY' 			WHERE Unit = 'UNIT_ENGLISH_REDCOAT';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_INFANTRY' 			WHERE Unit = 'UNIT_FRENCH_GARDE_IMPERIALE';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_MOTORISED_INFANTRY' WHERE Unit = 'UNIT_INFANTRY';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_COMPOSITE_BOWMAN'	WHERE Unit = 'UNIT_ARCHER';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_COMPOSITE_BOWMAN'	WHERE Unit = 'UNIT_PELTAST';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_COMPOSITE_BOWMAN'	WHERE Unit = 'UNIT_HYKSOS_BOWMAN';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CULVERIN'			WHERE Unit = 'UNIT_CROSSBOWMAN';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CULVERIN'			WHERE Unit = 'UNIT_CHINESE_CROUCHING_TIGER';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CULVERIN'			WHERE Unit = 'UNIT_CHOKONU';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CULVERIN'			WHERE Unit = 'UNIT_CAMEL_ARCHER';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CULVERIN'			WHERE Unit = 'UNIT_LONGBOWMAN';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_FIELD_GUN'			WHERE Unit = 'UNIT_FIELD_CANNON';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_FIELD_GUN' 			WHERE Unit = 'UNIT_KOREAN_HWACHA' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_KOREAN_HWACHA');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_HEAVY_INFANTRY'		WHERE Unit = 'UNIT_SPEARMAN';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_HEAVY_INFANTRY'		WHERE Unit = 'UNIT_PHALANX';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_TANK_DESTROYER'		WHERE Unit = 'UNIT_AT_CREW';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_LANCER'				WHERE Unit = 'UNIT_MEDIEVAL_HORSEMAN';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_LANCER'				WHERE Unit = 'UNIT_JINETE';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_LANCER'				WHERE Unit = 'UNIT_DRUZHINA';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_ARMORED_CAVALRY'	WHERE Unit = 'UNIT_CAVALRY';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_ARMORED_CAVALRY'	WHERE Unit = 'UNIT_RUSSIAN_COSSACK';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_ARMORED_HORSEMAN'	WHERE Unit = 'UNIT_HEAVY_CHARIOT';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_ARMORED_HORSEMAN'	WHERE Unit = 'UNIT_SUMERIAN_WAR_CART';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_REITER'				WHERE Unit = 'UNIT_KNIGHT';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_REITER'				WHERE Unit = 'UNIT_ARABIAN_MAMLUK';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_REITER'				WHERE Unit = 'UNIT_MUGHAL_SOWAR';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_REITER'				WHERE Unit = 'UNIT_AMAZON';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_REITER'				WHERE Unit = 'UNIT_GENDARME';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_LANDSHIP'			WHERE Unit = 'UNIT_CUIRASSIER';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_LANDSHIP'			WHERE Unit = 'UNIT_AMERICAN_ROUGH_RIDER';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_LANDSHIP'			WHERE Unit = 'UNIT_ENGLISH_IRONSIDE';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_LANDSHIP'			WHERE Unit = 'UNIT_POLISH_HUSSAR' AND EXISTS (SELECT UnitType FROM Units WHERE UnitType = 'UNIT_POLISH_HUSSAR');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_ARMORED_CAVALRY'	WHERE Unit = 'UNIT_UHLAN' AND EXISTS (SELECT UnitType FROM Units WHERE UnitType = 'UNIT_UHLAN');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_MOTORISED_INFANTRY'	WHERE Unit = 'UNIT_DIGGER' AND EXISTS (SELECT UnitType FROM Units WHERE UnitType = 'UNIT_DIGGER');
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_CORVETTE'			WHERE Unit = 'UNIT_CARAVEL';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_GALLEASS'			WHERE Unit = 'UNIT_QUADRIREME';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_ARMORED_CRUISER'	WHERE Unit = 'UNIT_FRIGATE';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_ARMORED_CRUISER'	WHERE Unit = 'UNIT_INDONESIAN_JONG';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_WW2_MARINE'			WHERE Unit = 'UNIT_FRENCH_MARINE';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_FIELD_HOWITZER'		WHERE Unit = 'UNIT_BOMBARD';
+UPDATE UnitUpgrades SET UpgradeUnit = 'UNIT_SP_HVY_ATILLERY'	WHERE Unit = 'UNIT_ARTILLERY';
+DELETE FROM UnitUpgrades WHERE Unit = 'UNIT_BATTLESHIP' AND UpgradeUnit = 'UNIT_MISSILE_CRUISER';
+DELETE FROM UnitUpgrades WHERE Unit = 'UNIT_BRAZILIAN_MINAS_GERAES' AND UpgradeUnit = 'UNIT_MISSILE_CRUISER';
+
+-- Units Changes
+UPDATE Units SET Combat = 39 WHERE UnitType = 'UNIT_ROMAN_LEGION';
+UPDATE Units SET Combat = 48 WHERE UnitType = 'UNIT_JAPANESE_SAMURAI';
+UPDATE Units SET Combat = 68 WHERE UnitType = 'UNIT_ENGLISH_REDCOAT';
+UPDATE Units SET Combat = 68 WHERE UnitType = 'UNIT_FRENCH_GARDE_IMPERIALE';
+UPDATE Units SET BaseMoves = 4 WHERE UnitType = 'UNIT_MECHANIZED_INFANTRY';
+UPDATE Units SET MandatoryObsoleteTech = 'TECH_IRON_WORKING' WHERE UnitType = 'UNIT_SLINGER';
+UPDATE Units SET MandatoryObsoleteTech = 'TECH_BALLISTICS' WHERE UnitType = 'UNIT_CROSSBOWMAN';
+UPDATE Units SET MandatoryObsoleteTech = 'TECH_BALLISTICS' WHERE UnitType = 'UNIT_CHINESE_CROUCHING_TIGER';
+UPDATE Units SET MandatoryObsoleteTech = 'TECH_ADVANCED_BALLISTICS' WHERE UnitType = 'UNIT_FIELD_CANNON';
+UPDATE Units SET MandatoryObsoleteTech = 'TECH_MILITARY_TACTICS' WHERE UnitType = 'UNIT_SPEARMAN';
+UPDATE Units SET PrereqTech = 'TECH_REPLACEABLE_PARTS', MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_AT_CREW';
+UPDATE Units SET BaseMoves = 4, AntiAirCombat = 50 WHERE UnitType = 'UNIT_MODERN_AT';
+UPDATE Units SET Combat = 54, PrereqTech = 'TECH_MASS_PRODUCTION', MandatoryObsoleteTech = 'TECH_SCIENTIFIC_THEORY' WHERE UnitType = 'UNIT_TERCIO';
+UPDATE Units SET Combat = 75, Cost = 450, StrategicResource = 'RESOURCE_OIL', MandatoryObsoleteTech = 'TECH_NANOTECHNOLOGY' WHERE UnitType = 'UNIT_HELICOPTER';
+UPDATE Units SET PrereqTech = 'TECH_NANOTECHNOLOGY' WHERE UnitType = 'UNIT_AMERICAN_AH64_APACHE';
+UPDATE Units SET BaseMoves = 3, StrategicResource= 'RESOURCE_HORSES' WHERE UnitType = 'UNIT_HEAVY_CHARIOT';
+UPDATE Units SET Combat = 44 WHERE UnitType = 'UNIT_CATAPHRACT' AND EXISTS (SELECT UnitType FROM Units WHERE UnitType = 'UNIT_CATAPHRACT');
+UPDATE Units SET BaseMoves = 4 WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER';
+UPDATE Units SET PrereqTech = 'TECH_COMBINED_ARMS', MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_TANK';
+UPDATE Units SET PrereqTech = 'TECH_COMBINED_ARMS', MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_PANZER';
+UPDATE Units SET PrereqTech = 'TECH_COMBINED_ARMS', MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_T34';
+UPDATE Units SET BaseMoves = 5, Range = 5 WHERE UnitType = 'UNIT_BIPLANE';
+UPDATE Units SET BaseMoves = 8, Range = 8 WHERE UnitType = 'UNIT_FIGHTER';
+UPDATE Units SET BaseMoves = 8, Range = 8 WHERE UnitType = 'UNIT_AMERICAN_P51';
+UPDATE Units SET BaseMoves = 10, Range = 10 WHERE UnitType = 'UNIT_JET_FIGHTER';
+UPDATE Units SET Combat = 40, Cost = 220 WHERE UnitType = 'UNIT_CARAVEL';
+UPDATE Units SET BaseMoves = 5, PrereqTech = 'TECH_RADIO', MandatoryObsoleteTech = 'TECH_TELECOMMUNICATIONS' WHERE UnitType = 'UNIT_DESTROYER';
+UPDATE Units SET BaseMoves = 4, AirSlots = 3 WHERE UnitType = 'UNIT_AIRCRAFT_CARRIER';
+UPDATE Units SET Maintenance = 4 WHERE UnitType = 'UNIT_FRIGATE';
+UPDATE Units SET BaseMoves = 5 WHERE UnitType = 'UNIT_MISSILE_CRUISER';
+UPDATE Units SET BaseMoves = 4, Cost = 600, Combat = 80, Bombard = 85, RangedCombat = 0, StrategicResource = null, PromotionClass = 'PROMOTION_CLASS_NAVAL_BOMBARD' WHERE UnitType = 'UNIT_BATTLESHIP';
+UPDATE Units SET BaseMoves = 4, Cost = 600, Combat = 85, Bombard = 90, PromotionClass = 'PROMOTION_CLASS_NAVAL_BOMBARD' WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
+UPDATE Units SET BaseMoves = 4, Cost = 600, Combat = 85, Bombard = 90, PromotionClass = 'PROMOTION_CLASS_NAVAL_BOMBARD' WHERE UnitType = 'UNIT_YAMATO';
+UPDATE Units SET Cost = 450, Combat = 63, Bombard = 75 WHERE UnitType = 'UNIT_ARTILLERY';
+UPDATE Units SET BaseMoves = 4, Combat = 83, Bombard = 95 WHERE UnitType = 'UNIT_ROCKET_ARTILLERY';
+UPDATE Units SET Combat = 61, Cost = 350, PrereqTech = 'TECH_RIFLING', PromotionClass = 'PROMOTION_CLASS_MARINE' WHERE UnitType = 'UNIT_FRENCH_MARINE';
+UPDATE Units SET PrereqTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_MODERN_SNIPER';
+UPDATE Units SET Combat = 63, RangedCombat = 77, PromotionClass = 'PROMOTION_CLASS_AUTOMATIC_GUN', FormationClass= 'FORMATION_CLASS_SUPPORT' WHERE UnitType = 'UNIT_MACHINE_GUN';
+UPDATE Units SET PromotionClass = 'PROMOTION_CLASS_AUTOMATIC_GUN', Cost = 320, Combat = 48, RangedCombat = 62, Maintenance = 5, ZoneOfControl = 0, FormationClass= 'FORMATION_CLASS_SUPPORT' WHERE UnitType = 'UNIT_GATLING_GUN';
+
+-- Unit Replaces Changes
+UPDATE 	UnitReplaces SET ReplacesUnitType = 'UNIT_MACEMAN'				WHERE CivUniqueUnitType = 'UNIT_NORWEGIAN_BERSERKER';
+UPDATE 	UnitReplaces SET ReplacesUnitType = 'UNIT_RIFLEMAN'				WHERE CivUniqueUnitType = 'UNIT_ENGLISH_REDCOAT';
+UPDATE 	UnitReplaces SET ReplacesUnitType = 'UNIT_RIFLEMAN'				WHERE CivUniqueUnitType = 'UNIT_FRENCH_GARDE_IMPERIALE';
+UPDATE 	UnitReplaces SET ReplacesUnitType = 'UNIT_INDUSTRIAL_MARINE'	WHERE CivUniqueUnitType = 'UNIT_FRENCH_MARINE';
+UPDATE 	UnitReplaces SET ReplacesUnitType = 'UNIT_GUNSHIP'				WHERE CivUniqueUnitType = 'UNIT_AMERICAN_AH64_APACHE';
+
+-- Unit Promotions
+UPDATE UnitPromotions SET PromotionClass = 'PROMOTION_CLASS_AIR_ATTACK' WHERE UnitPromotionType = 'PROMOTION_CLOSE_AIR_SUPPORT';
+UPDATE UnitPromotions SET PromotionClass = 'PROMOTION_CLASS_AIR_ATTACK' WHERE UnitPromotionType = 'PROMOTION_TORPEDO_BOMBER';
+UPDATE UnitPromotions SET PromotionClass = 'PROMOTION_CLASS_AIR_ATTACK' WHERE UnitPromotionType = 'PROMOTION_TANK_BUSTER';
+
+-- Tech Boost Changes
+UPDATE Boosts SET TechnologyType = 'TECH_CONSTRUCTION' WHERE Unit1Type = 'UNIT_ARCHER';
+
+-- Tech Tree Changes
+UPDATE Technologies SET EraType = 'ERA_MEDIEVAL', Cost = 390 WHERE TechnologyType = 'TECH_CARTOGRAPHY';
+
+-- UnitAIInfos Changes
+DELETE FROM UnitAIInfos WHERE UnitType = 'UNIT_GATLING_GUN' AND AiType = 'UNITAI_EXPLORE';

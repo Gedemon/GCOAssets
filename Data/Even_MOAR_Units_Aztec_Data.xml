@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Types>
+		<Row Type="UNIT_JAGUAR" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_WARRIOR_PRIEST" Kind="KIND_UNIT"/>
+		<Row Type="TRAIT_CIVILIZATION_UNIT_JAGUAR" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_UNIT_WARRIOR_PRIEST" Kind="KIND_TRAIT"/>
+		<Row Type="ABILITY_JAGUAR" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS" Kind="KIND_ABILITY"/>
+	</Types>
+	<Units>
+		<Row UnitType="UNIT_JAGUAR" BaseMoves="2" Cost="90" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="2" ZoneOfControl="true"
+			 Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_LAND_COMBAT" Name="LOC_UNIT_JAGUAR_NAME"
+			 Description="LOC_UNIT_JAGUAR_DESCRIPTION" PurchaseYield="YIELD_GOLD" PromotionClass="PROMOTION_CLASS_MELEE" Maintenance="2"
+			 Combat="34" PrereqTech="TECH_IRON_WORKING" MandatoryObsoleteTech="TECH_REPLACEABLE_PARTS"
+			 TraitType="TRAIT_CIVILIZATION_UNIT_JAGUAR"/>
+
+		<Row UnitType="UNIT_WARRIOR_PRIEST" BaseMoves="2" Cost="120" AdvisorType="ADVISOR_CONQUEST" BaseSightRange="2"
+			 ZoneOfControl="false" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_SUPPORT"
+			 Name="LOC_UNIT_WARRIOR_PRIEST_NAME" Description="LOC_UNIT_WARRIOR_PRIEST_DESCRIPTION" PurchaseYield="YIELD_FAITH"
+			 CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="20"
+			 PromotionClass="PROMOTION_CLASS_SUPPORT" Maintenance="3" PrereqCivic="CIVIC_MYSTICISM"
+			 TraitType="TRAIT_CIVILIZATION_UNIT_WARRIOR_PRIEST"/>
+	</Units>
+	<CivilizationTraits>
+		<Row CivilizationType="CIVILIZATION_AZTEC" TraitType="TRAIT_CIVILIZATION_UNIT_JAGUAR"/>
+		<Row CivilizationType="CIVILIZATION_AZTEC" TraitType="TRAIT_CIVILIZATION_UNIT_WARRIOR_PRIEST"/>
+	</CivilizationTraits>
+	<Traits>
+		<Row TraitType="TRAIT_CIVILIZATION_UNIT_JAGUAR" Name="LOC_UNIT_JAGUAR_NAME"/>
+		<Row TraitType="TRAIT_CIVILIZATION_UNIT_WARRIOR_PRIEST" Name="LOC_UNIT_WARRIOR_PRIEST_NAME"/>
+	</Traits>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_JAGUAR" ReplacesUnitType="UNIT_SWORDSMAN"/>
+	</UnitReplaces>
+	<UnitUpgrades>
+		<Row Unit="UNIT_JAGUAR" UpgradeUnit="UNIT_MACEMAN"/>
+	</UnitUpgrades>
+	<UnitAIInfos>
+		<Row UnitType="UNIT_JAGUAR" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_JAGUAR" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_JAGUAR" AiType="UNITTYPE_MELEE"/>
+		<Row UnitType="UNIT_JAGUAR" AiType="UNITTYPE_LAND_COMBAT"/>
+		<Row UnitType="UNIT_WARRIOR_PRIEST" AiType="UNITTYPE_CIVILIAN"/>
+		<Row UnitType="UNIT_WARRIOR_PRIEST" AiType="UNITTYPE_SIEGE_SUPPORT"/>
+	</UnitAIInfos>
+	<Tags>
+		<Row Tag="CLASS_JAGUAR" Vocabulary="ABILITY_CLASS"/>
+		<Row Tag="CLASS_WARRIOR_PRIEST" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_JAGUAR" Tag="CLASS_MELEE"/>
+		<Row Type="UNIT_JAGUAR" Tag="CLASS_CAPTURE_WORKER"/>
+		<Row Type="UNIT_JAGUAR" Tag="CLASS_JAGUAR"/>
+		<Row Type="ABILITY_JAGUAR" Tag="CLASS_JAGUAR"/>
+		<Row Type="UNIT_WARRIOR_PRIEST" Tag="CLASS_WARRIOR_PRIEST"/>
+		<Row Type="ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS" Tag="CLASS_MELEE"/>
+		<Row Type="ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS" Tag="CLASS_ANTI_CAVALRY"/>
+		<Row Type="ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS" Tag="CLASS_RANGED"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_JAGUAR" Name="LOC_ABILITY_JAGUAR" Description="LOC_ABILITY_JAGUAR_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS" Name="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS" Description="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_JAGUAR</UnitAbilityType>
+			<ModifierId>UNIT_STRONG_WHEN_ATTACKING</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_JAGUAR</UnitAbilityType>
+			<ModifierId>UNIT_WEAK_WHEN_DEFENDING</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_JAGUAR</UnitAbilityType>
+			<ModifierId>JAGUAR_IGNORE_JUNGLE_MOVEMENT_PENALTY</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_JAGUAR</UnitAbilityType>
+			<ModifierId>RANGER_IGNORE_FOREST_MOVEMENT_PENALTY</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS</UnitAbilityType>
+			<ModifierId>RECEIVE_WARRIOR_PRIEST_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS</UnitAbilityType>
+			<ModifierId>RECEIVE_WARRIOR_PRIEST_NO_REDUCTION_WHEN_DAMAGED_BONUS</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>JAGUAR_IGNORE_JUNGLE_MOVEMENT_PENALTY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_TERRAIN_COST</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>RECEIVE_WARRIOR_PRIEST_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_GREAT_PEOPLE_POINTS_PER_KILL</ModifierType>
+			<SubjectRequirementSetId>ADJACENT_WARRIOR_PRIEST_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>RECEIVE_WARRIOR_PRIEST_NO_REDUCTION_WHEN_DAMAGED_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_NO_REDUCTION_DAMAGE</ModifierType>
+			<SubjectRequirementSetId>ADJACENT_WARRIOR_PRIEST_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>JAGUAR_IGNORE_JUNGLE_MOVEMENT_PENALTY</ModifierId>
+			<Name>Ignore</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>JAGUAR_IGNORE_JUNGLE_MOVEMENT_PENALTY</ModifierId>
+			<Name>Type</Name>
+			<Value>JUNGLE</Value>
+		</Row>
+		<Row>
+			<ModifierId>RECEIVE_WARRIOR_PRIEST_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>RECEIVE_WARRIOR_PRIEST_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_GENERAL</Value>
+		</Row>
+		<Row>
+			<ModifierId>RECEIVE_WARRIOR_PRIEST_NO_REDUCTION_WHEN_DAMAGED_BONUS</ModifierId>
+			<Name>NoReduction</Name>
+			<Value>true</Value>
+		</Row>
+	</ModifierArguments>
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>ADJACENT_WARRIOR_PRIEST_REQUIREMENTS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>ADJACENT_WARRIOR_PRIEST_REQUIREMENTS</RequirementSetId>
+			<RequirementId>ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row>
+			<RequirementId>ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES</RequirementType>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+		<Row>
+			<RequirementId>ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT</RequirementId>
+			<Name>Tag</Name>
+			<Value>CLASS_WARRIOR_PRIEST</Value>
+		</Row>
+	</RequirementArguments>
+</GameData>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..GameDependencyData>
+	<ID>
+		<name text="Warfare Expanded"/>
+		<id text="9612f1e9-9210-4457-afe1-7514f190658a"/>
+	</ID>
+	<RequiredGameArtIDs>
+		<Element>
+			<name text="Civ6"/>
+			<id text="cb2f71b7-843e-4af3-9ca7-992acda9c195"/>
+		</Element>
+	</RequiredGameArtIDs>
+	<SystemDependencies>
+		<Element>
+			<ConsumerName text="Units"/>
+			<ArtDefDependencyPaths>
+				<Element text="WarfareExpanded_Units.artdef"/>
+				<Element text="WarfareExpanded_Unit_Bins.artdef"/>
+				<Element text="WarfareExpanded_Cultures.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies>
+				<Element text="Unit"/>
+				<Element text="VFX"/>
+				<Element text="Light"/>
+			</LibraryDependencies>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+		<Element>
+			<ConsumerName text="UI"/>
+			<ArtDefDependencyPaths>
+				<Element text="WarfareExpanded_UserInterface.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies>
+				<Element text="UITexture"/>
+			</LibraryDependencies>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+		<Element>
+			<ConsumerName text="Cultures"/>
+			<ArtDefDependencyPaths>
+				<Element text="WarfareExpanded_Cultures.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies/>
+			<LoadsLibraries>false</LoadsLibraries>
+		</Element>
+	</SystemDependencies>
+	<LibraryDependencies>
+		<Element>
+			<LibraryName text="UITexture"/>
+			<PackageDependencies>
+				<Element text="UI/WarfareExpandedIcons.blp"/>
+			</PackageDependencies>
+		</Element>
+		<Element>
+			<LibraryName text="Unit"/>
+			<PackageDependencies>
+				<Element text="units/WarfareExpandedUnits.blp"/>
+			</PackageDependencies>
+		</Element>
+	</LibraryDependencies>
+</AssetObjects..GameDependencyData>
+

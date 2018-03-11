@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<PlayerItems>
+		<Row CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="UNIT_JAGUAR" Icon="ICON_UNIT_JAGUAR" Name="LOC_UNIT_JAGUAR_NAME" Description="LOC_UNIT_JAGUAR_DESCRIPTION" SortIndex="11"/>
+		<Row CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="UNIT_WARRIOR_PRIEST" Icon="ICON_UNIT_WARRIOR_PRIEST" Name="LOC_UNIT_WARRIOR_PRIEST_NAME" Description="LOC_UNIT_WARRIOR_PRIEST_DESCRIPTION" SortIndex="12"/>
+
+		<Row Domain="Players:Expansion1_Players" CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="UNIT_JAGUAR" Icon="ICON_UNIT_JAGUAR" Name="LOC_UNIT_JAGUAR_NAME" Description="LOC_UNIT_JAGUAR_DESCRIPTION" SortIndex="11"/>
+		<Row Domain="Players:Expansion1_Players" CivilizationType="CIVILIZATION_AZTEC" LeaderType="LEADER_MONTEZUMA" Type="UNIT_WARRIOR_PRIEST" Icon="ICON_UNIT_WARRIOR_PRIEST" Name="LOC_UNIT_WARRIOR_PRIEST_NAME" Description="LOC_UNIT_WARRIOR_PRIEST_DESCRIPTION" SortIndex="12"/>
+	</PlayerItems>
+</GameData>
