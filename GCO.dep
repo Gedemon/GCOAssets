@@ -13,9 +13,18 @@
 
 	<LibraryDependencies>
 		<Element>
+			<LibraryName text="LeaderFallback"/>
+			<PackageDependencies>
+				<Element text="LeaderFallbacks.blp"/>
+			</PackageDependencies>
+		</Element>
+		<Element>
 			<LibraryName text="UITexture"/>
 			<PackageDependencies>
 				<Element text="UI/BuildingIcons.blp"/>
+				<Element text="UILeaders.blp"/>
+				<Element text="UI/Icons.blp"/>
+				<Element text="Logo.blp"/>
 			</PackageDependencies>
 		</Element>
 	</LibraryDependencies>
