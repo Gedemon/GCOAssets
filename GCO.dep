@@ -24,6 +24,7 @@
 				<Element text="UI/BuildingIcons.blp"/>
 				<Element text="UILeaders.blp"/>
 				<Element text="UI/Icons.blp"/>
+				<Element text="UI/EraBG.blp"/>
 				<Element text="Logo.blp"/>
 			</PackageDependencies>
 		</Element>
