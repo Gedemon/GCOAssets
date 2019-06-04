@@ -833,10 +833,6 @@
 		<!-- Automatic Gun - Created by Laurana Kanan -->
 		<Row>
 			<RequirementSetId>LK_OPPONENT_MELEE_ANTI_CAV_REQUIREMENTS</RequirementSetId>
-			<RequirementId>OPPONENT_MELEE_REQUIREMENT</RequirementId>
-		</Row>
-		<Row>
-			<RequirementSetId>LK_OPPONENT_MELEE_ANTI_CAV_REQUIREMENTS</RequirementSetId>
 			<RequirementId>OPPONENT_ANTI_CAVALRY_REQUIREMENT</RequirementId>
 		</Row>
 		<Row>

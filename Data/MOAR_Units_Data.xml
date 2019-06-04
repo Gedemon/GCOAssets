@@ -1661,14 +1661,6 @@
 			<RequirementId>ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC</RequirementId>
 		</Row>
 		<Row>
-			<RequirementSetId>OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS</RequirementSetId>
-			<RequirementId>ANTI_SPEAR_OPPONENT_REQUIREMENT</RequirementId>
-		</Row>
-		<Row>
-			<RequirementSetId>OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS</RequirementSetId>
-			<RequirementId>OPPONENT_MELEE_REQUIREMENT</RequirementId>
-		</Row>
-		<Row>
 			<RequirementSetId>PLOT_IS_HILLS_REQUIREMENTS</RequirementSetId>
 			<RequirementId>PLOT_IS_HILLS_REQUIREMENT</RequirementId>
 		</Row>
@@ -1679,10 +1671,6 @@
 		<Row>
 			<RequirementSetId>PLAYER_IS_ATTACKER_REQUIREMENTS_SET</RequirementSetId>
 			<RequirementId>PLAYER_IS_ATTACKER_REQUIREMENTS</RequirementId>
-		</Row>
-		<Row>
-			<RequirementSetId>OPPONENT_MELEE_CAVALRY_REQUIREMENTS</RequirementSetId>
-			<RequirementId>OPPONENT_MELEE_REQUIREMENT</RequirementId>
 		</Row>
 		<Row>
 			<RequirementSetId>OPPONENT_MELEE_CAVALRY_REQUIREMENTS</RequirementSetId>
