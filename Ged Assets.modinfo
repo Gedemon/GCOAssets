@@ -5,6 +5,7 @@
         <Teaser>LOC_GED_ASSETS_TEASER</Teaser>
         <Description>LOC_GED_ASSETS_DESCRIPTION</Description>
         <Authors>Multiple</Authors>
+		<CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
 	
 	<LocalizedText>
